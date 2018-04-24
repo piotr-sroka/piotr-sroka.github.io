@@ -1,0 +1,744 @@
+@import url("reset.css");
+body {
+	background-color: #ebebe8;
+	font: 14px "Arial Narrow";
+	line-height: 18px;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+img::selection {
+	background: transparent;
+}
+
+h2, h3 {
+	font-family: "Yanone Kaffeesatz";
+}
+
+h3 {
+	font-size: 22px;
+}
+
+a {
+	text-decoration: none;
+	transition: all .3s;
+}
+
+::selection {
+	color: #ffffff;
+	text-shadow: none;
+	background-color: #ea4c88;
+}
+
+header {
+	position: relative;
+}
+
+#top-widget {
+	position: relative;
+}
+
+#top-widget-open-close {
+	display: block;
+	width: 42px;
+	height: 42px;
+	right: 0;
+	bottom: -42px;
+	position: absolute;
+	color: transparent;
+	background: url("http://luiszuno.com/themes/zeni/img/top-open.png") no-repeat 0px 0px;
+	background-position: -44px 0px;
+}
+
+#top-widget-open-close::selection {
+	background: transparent;
+	color: transparent;
+}
+
+#top-widget, #main-top {
+	background-color: #333333;
+	color: #aaaaaa;
+}
+
+#main-top {
+	padding: 20px;
+}
+
+#top-widget-wrapper, #main-top, #main-top nav, .footer-widget-wrapper {
+	width: 980px;
+	margin: 0 auto;
+}
+
+#top-widget-wrapper {
+	padding: 20px;
+	display: none;
+}
+
+#top-widget-wrapper, .footer-widget-wrapper {
+	padding-bottom: 15px;
+}
+
+#top-widget-wrapper ul, .footer-widget-wrapper ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.widget-column {
+	width: 230px;
+	padding-right: 20px;
+}
+
+.widget-column h3 {
+	margin-bottom: 21px;
+	color: #ffffff;
+}
+
+.widget-column:last-child {
+	padding-right: 0;
+}
+
+.recent-post {
+	height: 80px;
+}
+
+.recent-post div {
+	margin-left: 64px;
+}
+
+.recent-post a {
+	color: #aaaaaa;
+}
+
+.recent-post a:hover {
+	color: #ea4c88;
+}
+
+.recent-post img {
+	float: left;
+}
+
+.recent-post p:first-child {
+	color: #ffffff;
+}
+
+header, #main-top {
+	background-color: #444444;
+	box-shadow: inset 0px -60px 69px -40px rgba(0, 0, 0, 0.35);
+}
+
+#main-top {
+	height: 130px;
+	padding-bottom: 0;
+}
+
+#main-top nav {
+	display: block;
+}
+
+#main-top nav a {
+	font-family: "Yanone Kaffeesatz";
+	color: #E2E0D7;
+	font-size: 18px;
+}
+
+#main-top nav ul li {
+	display: inline-block;
+	margin-right: 17px;
+	height: 25px;
+}
+
+#main-top nav ul li:hover {
+	border-bottom: 5px solid #E2E0D7;
+}
+
+#main-top ul li a:hover {
+	color: #ea4c88;
+}
+
+#main-top ul li.current-menu-item {
+	box-shadow: 0px 5px 0 #ebebe8;
+}
+
+#main-top > a {
+	font-family: "Yanone Kaffeesatz";
+	height: 70px;
+	display: inline-block;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 58px;
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
+	padding-top: 30px;
+	margin: 0 auto;
+}
+
+#main-content {
+	padding-top: 40px;
+	background: url("http://luiszuno.com/themes/zeni/img/oblique-lines.png") repeat-x;
+}
+
+#main-article {
+	display: flex;
+	justify-content: space-between;
+}
+
+#main-article div {
+	background-color: #e2e0d7;
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+#main-article div:last-child {
+	position: relative;
+	margin-top: -60px;
+	width: 310px;
+	padding-top: 70px;
+	padding-bottom: 20px;
+	justify-content: flex-end;
+}
+
+#main-article h1 {
+	font-family: "Yanone Kaffeesatz";
+	color: #444444;
+	font-size: 48px;
+	line-height: 1em;
+	font-weight: 400;
+	margin-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+}
+
+#main-article p {
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #888888;
+	margin-bottom: 21px;
+	font-size: inherit;
+	line-height: 1em;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4);
+}
+
+#main-article a {
+	color: #444444;
+}
+
+#main-article a:hover {
+	color: #ea4c88;
+}
+
+#main-article-gallery {
+	height: 300px;
+	width: 645px;
+	margin-right: 20px;
+}
+
+#main-article-gallery img {
+	width: 100%;
+	max-height: 100%;
+}
+
+#content-wrapper {
+	width: 980px;
+	margin: 0 auto;
+}
+
+#content-wrapper section ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	max-width: 980px;
+}
+
+#content-wrapper section ul li {
+	padding-top: 0;
+	flex: 100%;
+}
+
+#content-wrapper section ul li img {
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+#content-wrapper h2, #content-wrapper h3, #content-wrapper a {
+	color: #444444;
+}
+
+#content-wrapper a:hover {
+	color: #ea4c88;
+}
+
+#content-wrapper p {
+	color: #888888;
+}
+
+#content-wrapper h2 {
+	line-height: 0;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	font-size: 34px;
+	overflow: hidden;
+}
+
+#content-wrapper h2 span {
+	display: inline-block;
+	position: relative;
+}
+
+#content-wrapper h2 span:before, #content-wrapper h2 span:after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	border-top: 1px solid #aaaaaa;
+	top: 0;
+	width: 500px;
+	box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+}
+
+#content-wrapper h2 span:before {
+	right: 100%;
+	margin-right: 15px;
+}
+
+#content-wrapper h2 span:after {
+	left: 100%;
+	margin-left: 15px;
+}
+
+#featured-posts ul li {
+	display: block;
+	position: relative;
+	max-width: 310px;
+}
+
+#featured-posts ul li:nth-child(n+4) {
+	margin-top: 15px;
+}
+
+#featured-posts h4, #featured-posts p {
+	color: #ffffff;
+}
+
+#latest-projects ul li {
+	display: block;
+	position: relative;
+	max-width: 230px;
+}
+
+#latest-projects > a {
+	display: inline-block;
+	position: relative;
+	float: right;
+	color: #444444;
+}
+
+#latest-projects > a:hover {
+	color: #ea4c88;
+}
+
+#latest-projects h4, #latest-projects p {
+	color: #ffffff;
+}
+
+#latest-projects #more-projects {
+	margin-top: 15px;
+}
+
+footer {
+	background: url("http://luiszuno.com/themes/zeni/img/oblique-lines.png") repeat-x;
+	margin-top: 90px;
+	padding-bottom: 50px;
+}
+
+footer > span {
+	display: inline-block;
+	content: "";
+	height: 6px;
+	width: 980px;
+	border-bottom: 1px solid #bbbbbb;
+	border-top: 1px solid #bbbbbb;
+}
+
+footer > div {
+	padding-top: 25px;
+}
+
+footer h3 {
+	font-size: 24px;
+}
+
+.footer-widget-wrapper {
+	border-bottom: 1px solid #bbbbbb;
+}
+
+#copyright-widget {
+	padding-top: 35px;
+	display: flex;
+	width: 980px;
+	justify-content: space-between;
+}
+
+#copyright-widget span {
+	padding-top: 8px;
+}
+
+#copyright-widget ul li {
+	display: inline-block;
+}
+
+#copyright-widget ul li img:hover {
+	opacity: .8;
+}
+
+.image-hover {
+	background-color: rgba(234, 76, 136, 0.9);
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 99%;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #ffffff;
+	font-family: Arial;
+}
+.image-hover:nth-child(n+4) {
+	margin-top: 15px;
+}
+
+.image-hover div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.image-hover strong {
+	display: block;
+	padding: 10px 10px 0 10px;
+	font-weight: bold;
+}
+
+.image-hover p {
+	padding: 15px 10px 0 10px;
+	position: absolute;
+	display: block;
+	font-size: 11px;
+	line-height: 1.25;
+}
+
+.image-hover .image-more-data {
+	bottom: 5px;
+}
+
+@media all and (min-width: 769px) and (max-width: 1041px) {
+	#top-widget-wrapper, #main-top, #content-wrapper, .footer-widget-wrapper, #copyright-widget {
+		max-width: 728px;
+	}
+
+	#main-top > a, #main-top nav {
+		width: 728px;
+	}
+
+	#top-widget-wrapper ul, .footer-widget-wrapper ul {
+		justify-content: space-around;
+	}
+
+	.widget-column {
+		width: 220px;
+		padding-right: 20px;
+	}
+
+	#featured-posts ul {
+		flex-flow: row wrap;
+		justify-content: space-between;
+		width: 728px;
+	}
+
+	#featured-posts ul li {
+		max-width: 230px;
+	}
+
+	#latest-projects ul {
+		flex-flow: row wrap;
+		justify-content: space-between;
+		width: 728px;
+	}
+
+	#latest-projects ul li {
+		max-width: 170px;
+	}
+
+	#main-article {
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	#main-article div:last-child {
+		margin-top: 0px;
+		padding-top: 50px;
+		min-width: 728px;
+		min-height: 100px;
+	}
+
+	#main-article-gallery {
+		height: 345px;
+		min-width: 728px;
+		margin: 0 auto;
+	}
+
+	footer > span {
+		width: 728px;
+	}
+
+	.image-hover p {
+		display: none;
+	}
+}
+
+@media all and (min-width: 481px) and (max-width: 768px) {
+	#top-widget-wrapper, #main-top, #content-wrapper, .footer-widget-wrapper, #copyright-widget {
+		max-width: 440px;
+	}
+
+	#main-top > a, #main-top nav {
+		width: 440px;
+	}
+
+	#top-widget-wrapper ul, .footer-widget-wrapper ul {
+		max-width: 440px;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	#top-widget-wrapper ul li, .footer-widget-wrapper ul li {
+		padding-bottom: 45px;
+		padding-top: 40px;
+	}
+
+	#top-widget-wrapper ul li:first-child, .footer-widget-wrapper ul li:first-child {
+		padding-top: 0;
+		padding-bottom: 20px;
+	}
+
+	#top-widget-wrapper ul li:last-child, .footer-widget-wrapper ul li:last-child {
+		border-bottom: none;
+	}
+
+	#top-widget-wrapper ul li {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.footer-widget-wrapper ul li {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+
+	.widget-column {
+		width: 440px;
+		padding: 0;
+	}
+
+	#content-wrapper section ul {
+		flex-flow: row wrap;
+		justify-content: space-between;
+		width: 440px;
+	}
+
+	#content-wrapper section ul li {
+		max-width: 440px;
+		margin-top: 15px;
+	}
+
+	#content-wrapper section ul li:first-child {
+		margin-top: 0;
+	}
+
+	#content-wrapper h2 {
+		font-size: 24px;
+		padding-top: 40px;
+		padding-bottom: 25px;
+	}
+
+	#main-article {
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	#main-article div:last-child {
+		margin-top: 0px;
+		padding-top: 50px;
+		width: 440px;
+		min-height: 100px;
+	}
+
+	#main-article div:last-child h1 {
+		font-size: 24px;
+	}
+
+	#main-article-gallery {
+		height: 215px;
+		width: 440px;
+		margin: 0 auto;
+	}
+
+	#featured-posts ul {
+		width: 440px;
+		margin: 0;
+		padding-right: 0;
+	}
+
+	#featured-posts ul li img {
+		width: 440px;
+	}
+
+	#latest-projects ul {
+		margin: 0;
+		padding-right: 0;
+	}
+
+	#latest-projects ul li img {
+		width: 440px;
+	}
+
+	footer > span {
+		width: 440px;
+	}
+}
+
+@media all and (max-width: 480px) {
+	#top-widget-wrapper, #main-top, #content-wrapper, .footer-widget-wrapper, #copyright-widget {
+		max-width: 250px;
+	}
+
+	#main-top > a, #main-top nav {
+		width: 250px;
+	}
+
+	#main-top {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 5px;
+	}
+
+	#main-top > a {
+		margin-top: 25px;
+	}
+
+	#main-top nav {
+		width: 80px;
+	}
+
+	#main-top nav ul {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-end;
+	}
+
+	#main-top nav ul li {
+		height: 20px;
+		margin-bottom: 5px;
+		margin-right: 0;
+		padding-right: 5px;
+	}
+
+	#main-top nav ul li.current-menu-item {
+		box-sizing: border-box;
+		box-shadow: 5px 0 0 #ebebe8;
+	}
+
+	#main-top nav ul li:hover {
+		border-bottom: 0;
+		box-sizing: border-box;
+		box-shadow: 5px 0 0 #ebebe8;
+	}
+
+	#top-widget-wrapper ul, .footer-widget-wrapper ul {
+		max-width: 250px;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	#top-widget-wrapper ul li, .footer-widget-wrapper ul li {
+		padding-bottom: 45px;
+		padding-top: 40px;
+	}
+
+	#top-widget-wrapper ul li:first-child, .footer-widget-wrapper ul li:first-child {
+		padding-top: 0;
+		padding-bottom: 20px;
+	}
+
+	#top-widget-wrapper ul li:last-child, .footer-widget-wrapper ul li:last-child {
+		border-bottom: none;
+	}
+
+	#top-widget-wrapper ul li {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.footer-widget-wrapper ul li {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+
+	.widget-column {
+		width: 250px;
+		padding: 0;
+	}
+
+	#content-wrapper section ul {
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	#content-wrapper section ul li {
+		margin-top: 15px;
+	}
+
+	#content-wrapper section ul li:first-child {
+		margin-top: 0;
+	}
+
+	#content-wrapper h2 {
+		font-size: 24px;
+		padding-top: 40px;
+		padding-bottom: 25px;
+	}
+
+	#main-article {
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	#main-article div:last-child {
+		margin-top: 0px;
+		padding-top: 50px;
+		width: 250px;
+		min-height: 100px;
+	}
+
+	#main-article div:last-child h1 {
+		font-size: 24px;
+	}
+
+	#main-article-gallery {
+		height: 125px;
+		width: 250px;
+		margin: 0 auto;
+	}
+
+	#featured-posts ul li {
+		width: 250px;
+	}
+
+	#latest-projects ul li {
+		min-width: 250px;
+	}
+
+	footer > span {
+		width: 250px;
+	}
+}
+
+/*# sourceMappingURL=style.css.map */
