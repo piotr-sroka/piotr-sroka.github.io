@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison | Zeni</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #e4e6e8;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: #4f4e4d;
+            overflow: hidden;
+        }
+        a, a:link, a:active {
+            color: #9f9e9d;
+            text-decoration: none;
+            font-size: 2rem;
+            padding: 20px;
+            transition: color .2s linear;
+            position: relative;
+        }
+        a::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 20%;
+            height: 1px;
+            left: 20px;
+            background-color: #9f9f9f;
+            transition: width .2s linear;
+        }
+        a:hover {
+            color: #6f6e6d;
+        }
+        a:hover::after {
+            width: Calc(100% - 40px);
+        }
+        .page-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        .left, .right {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        .left {
+            border-right: 1px solid #cdcdcd;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="left">
+            <p><a href="maison/index.html">MAISON</a></p>
+        </div>
+        <div class="right">
+            <p><a href="zeni/index.html">ZENI</a></p>
+        </div>
+    </div>    
+</body>
+</html>
